@@ -14,10 +14,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.frameworks = 'UIKit', 'CoreText'
-  s.library = 'c++'
-  s.xcconfig = {
-    'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-    'CLANG_CXX_LIBRARY' => 'libc++',
-  }
   s.source_files = 'VZFlexLayout/**/*'
 end
