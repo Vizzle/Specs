@@ -12,11 +12,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Vizzle/VZFlexLayout.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  # s.library = 'c++'
   s.requires_arc = true
-  s.pod_target_xcconfig = {
-    'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
-    'CLANG_CXX_LIBRARY' => 'libc++'
+  s.frameworks = 'UIKit', 'CoreText'
+  s.library = 'c++'
+  s.xcconfig = {
+    'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+    'CLANG_CXX_LIBRARY' => 'libc++',
   }
   s.source_files = 'VZFlexLayout/**/*'
 end
