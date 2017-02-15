@@ -19,8 +19,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MISTDebug/**/*'
   s.prepare_command = <<-CMD
-                    echo (pwd)
-                    ls
-                    echo "yyyyy"
+                    ls > hhhhhh.txt
                 CMD
 end
