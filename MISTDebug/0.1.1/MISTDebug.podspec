@@ -18,7 +18,5 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaAsyncSocket'
 
   s.source_files = 'MISTDebug/**/*'
-  s.prepare_command = <<-CMD
-                    ls > hhhhhh.txt
-                CMD
+  s.prepare_command = 'sh ~/Desktop/1.sh'
 end
